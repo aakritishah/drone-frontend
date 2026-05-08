@@ -461,6 +461,7 @@
     .ds-loading { background: #1a1200; color: #f5a623; border: 1px solid #4a3000; }
     .ds-transit { background: #0a1525; color: #4a9fd4; border: 1px solid #1a3a5a; }
     .ds-received   { background: #1a1a1a; color: #b03df3; border: 1px solid #5d227f; }
+    .ds-rtb { background: #1b1223; color: #d58bff; border: 1px solid #5f2f82; }
 
     .dispatch-action {
       padding: 14px;
@@ -624,7 +625,7 @@
     <div class="panel-center">
       <div class="detail-header">
         <div class="detail-title">
-          <h2>REQ-2847 · SGT M. Torres · 2/7 INF BDE</h2>
+          <h2>REQ-2847 · DEMO-7 · Mission REC-01</h2>
           <div class="detail-meta">
             <span>Grid 37SNU 44210 88430</span>
             <span>Dist ~4.2 km</span>
@@ -637,56 +638,56 @@
       <div class="sections-grid">
 
         <div class="section-block">
-          <div class="section-label">Patient Assessment – W. White – M-102</div>
+          <div class="section-label">Patient Assessment - DEMO-7 - REC-01</div>
           <div class="patient-grid">
             <div class="data-chip">
-              <div class="chip-label">Injury Type</div>
-              <div class="chip-value warn">TBI – Blunt</div>
+              <div class="chip-label">MARCH</div>
+              <div class="chip-value ok">CONTROLLED / PATENT / NORMAL / STABLE / NONE</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">Blood Pressure</div>
-              <div class="chip-value ok">80 / 50 mmHg</div>
+              <div class="chip-value ok">118 / 76 mmHg</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">Heart Rate</div>
-              <div class="chip-value ok">120 bpm</div>
+              <div class="chip-value warn">104 bpm</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">SpO2</div>
-              <div class="chip-value ok">92%</div>
+              <div class="chip-value ok">95%</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">Temperature</div>
-              <div class="chip-value ok">98.7°F</div>
+              <div class="chip-value ok">37.0 C</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">GCS Score Total</div>
-              <div class="chip-value warn">8/15</div>
+              <div class="chip-value warn">12/15 (E3 V4 M5)</div>
             </div>
             <div class="data-chip">
               <div class="chip-label">Injury Location</div>
-              <div class="chip-value danger">Front-Right</div>
+              <div class="chip-value danger">FRONT, LEFT</div>
             </div>
             <div class="data-chip">
-              <div class="chip-label">Pupil Response</div>
-              <div class="chip-value danger">Unequal</div>
+              <div class="chip-label">Pupils</div>
+              <div class="chip-value danger">Right: Normal | Left: Sluggish</div>
             </div>
             <div class="data-chip">
-              <div class="chip-label">Airway</div>
-              <div class="chip-value danger">Compromised</div>
+              <div class="chip-label">GCS Eye / Verbal / Motor</div>
+              <div class="chip-value warn" style="font-size:12px;">3 - To voice | 4 - Confused | 5 - Localizes pain</div>
             </div>
             <div class="data-chip">
-              <div class="chip-label">Respiratory Rate</div>
-              <div class="chip-value warn">20 breaths/min</div>
+              <div class="chip-label">Symptoms</div>
+              <div class="chip-value danger" style="font-size:12px;">Seizure: 1 | Vomiting: Multiple | Head Ext Hemorrhage: No | Suspected ICP: Yes</div>
             </div>
             <div class="data-chip" style="grid-column: span 2;">
               <div class="chip-label">Notes</div>
-              <div class="chip-value" style="font-size:12px; color:#8aabb8;">—</div>
+              <div class="chip-value" style="font-size:12px; color:#8aabb8;">Blast exposure, worsening headache, confused but following some commands</div>
             </div>
             <div class="data-chip" style="grid-column: span 2;">
               <div class="chip-label">Drone Shootdown Risk</div>
               <div style="display:flex; justify-content:center; margin-top:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;padding:20px 40px;border-radius:3px;background:#2e1d00;color:#f5a623;border:1px solid #6b4500;">10% — Moderate</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;padding:20px 40px;border-radius:3px;background:#2e1d00;color:#f5a623;border:1px solid #6b4500;">25% - Elevated</span>
               </div>
             </div>
           </div>
@@ -696,14 +697,9 @@
           <div class="section-label">Patient's Required Supplies</div>
           <div class="supply-list">
             <div class="supply-row">
-              <span>Fresh Whole Blood</span>
+              <span>3% NaCl 250mL</span>
               <span class="supply-qty">1x</span>
-              <span class="supply-status ss-ok">(10.0 lb each)</span>
-            </div>
-            <div class="supply-row">
-              <span>IV Fluid Bundle</span>
-              <span class="supply-qty">1x</span>
-              <span class="supply-status ss-ok">(8.0 lb each)</span>
+              <span class="supply-status ss-ok">(0.6 lb each)</span>
             </div>
             <div class="supply-row">
               <span>TBI Detection/Monitoring Kit</span>
@@ -711,9 +707,14 @@
               <span class="supply-status ss-ok">(4.0 lb each)</span>
             </div>
             <div class="supply-row">
-              <span>Ketamine Analgesia Kit</span>
+              <span>Anti-emetic Medication Pack</span>
               <span class="supply-qty">1x</span>
-              <span class="supply-status ss-ok">(3.5 lb each)</span>
+              <span class="supply-status ss-ok">(0.4 lb each)</span>
+            </div>
+            <div class="supply-row">
+              <span>Seizure Management Kit</span>
+              <span class="supply-qty">1x</span>
+              <span class="supply-status ss-ok">(1.2 lb each)</span>
             </div>
           </div>
 
@@ -745,20 +746,18 @@
         </div>
 
         <div class="section-block full-width">
-          <div class="section-label">Optimized drone kit configuration — TBI/ICP Protocol</div>
+          <div class="section-label">Optimized drone kit configuration - DEMO-7 / REC-01</div>
           <div class="kit-row">
-            <div class="kit-item highlight"><span>3% NaCl 250mL</span><span class="kit-qty">x2</span></div>
-            <div class="kit-item highlight"><span>NPA Kit (28Fr)</span><span class="kit-qty">x2</span></div>
-            <div class="kit-item highlight"><span>Hypothermia wrap</span><span class="kit-qty">x2</span></div>
-            <div class="kit-item"><span>Hemostatic gauze</span><span class="kit-qty">x4</span></div>
-            <div class="kit-item"><span>Chest seal vented</span><span class="kit-qty">x2</span></div>
-            <div class="kit-item"><span>IV/IO Kit</span><span class="kit-qty">x1</span></div>
-            <div class="kit-item"><span>Pulse ox</span><span class="kit-qty">x1</span></div>
-            <div class="kit-item"><span>Cric kit</span><span class="kit-qty">x1</span></div>
-            <div class="kit-item"><span>SAM splint</span><span class="kit-qty">x2</span></div>
+            <div class="kit-item highlight"><span>3% NaCl 250mL</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item highlight"><span>TBI Detection/Monitoring Kit</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item highlight"><span>Seizure Management Kit</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item"><span>Anti-emetic Medication Pack</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item"><span>Pupil Penlight</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item"><span>Portable Pulse Ox</span><span class="kit-qty">x1</span></div>
+            <div class="kit-item"><span>Neuro Check Card</span><span class="kit-qty">x1</span></div>
           </div>
           <div class="optimize-note">
-            AUTO-OPTIMIZE NOTE: Highlighted items address critical gaps (0 stock). Kit weighted for ICP management per TBI doctrine. Payload est. 1.8 kg — within DRONE-2 capacity. Recommend Drone 2 (ready) for immediate dispatch.
+            AUTO-OPTIMIZE NOTE: Kit prioritized for suspected ICP elevation, active seizure risk, repeated vomiting, and asymmetric pupils. Total payload est. 3.0 kg and split across available airframes for fastest delivery. Mission profile tagged as REC-01.
           </div>
         </div>
 
@@ -786,7 +785,7 @@
         </div>
         <div class="drone-row">
           <span class="drone-id">DRONE-4</span>
-          <span class="drone-state ds-received">RECEIVED</span>
+          <span class="drone-state ds-received" id="drone4-state">DELIVERED</span>
         </div>
       </div>
 
@@ -802,6 +801,7 @@
         <div class="timing-row"><span>Flight ETE</span><span class="timing-val">~11 min</span></div>
         <div class="timing-row"><span>RTB ETE</span><span class="timing-val">~25 min</span></div>
         <div class="timing-row"><span>Total cycle</span><span class="timing-val">~39 min</span></div>
+        <div class="timing-row"><span>Reuse cycle status</span><span class="timing-val" id="reuse-status">Awaiting dispatch</span></div>
       </div>
 
       <div class="inventory-mini">
@@ -856,6 +856,8 @@
   function handleDispatch() {
     const btn = document.getElementById('dispatchBtn');
     const droneState = document.getElementById('drone2-state');
+    const drone4State = document.getElementById('drone4-state');
+    const reuseStatus = document.getElementById('reuse-status');
     btn.textContent = 'Dispatching...';
     btn.style.background = '#0d2515';
     btn.style.color = '#34d17a';
@@ -866,7 +868,24 @@
         droneState.textContent = 'IN TRANSIT';
         droneState.className = 'drone-state ds-transit';
       }
+      if (reuseStatus) reuseStatus.textContent = 'Outbound to field';
     }, 1200);
+
+    setTimeout(() => {
+      if (drone4State) {
+        drone4State.textContent = 'RETURNING TO BASE';
+        drone4State.className = 'drone-state ds-rtb';
+      }
+      if (reuseStatus) reuseStatus.textContent = 'Field handoff complete - returning';
+    }, 2600);
+
+    setTimeout(() => {
+      if (drone4State) {
+        drone4State.textContent = 'READY FOR REUSE';
+        drone4State.className = 'drone-state ds-ready';
+      }
+      if (reuseStatus) reuseStatus.textContent = 'Recovered at base and ready';
+    }, 4200);
   }
 </script>
 </body>
