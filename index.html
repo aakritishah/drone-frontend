@@ -62,6 +62,23 @@
       gap: 16px;
     }
 
+    .demo-link {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 3px;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 1px solid #1a3a5a;
+      background: #102040;
+      color: #7ab0d4;
+      transition: background 0.15s;
+    }
+
+    .demo-link:hover {
+      background: #17305c;
+    }
+
     .status-pill {
       font-family: 'IBM Plex Mono', monospace;
       font-size: 11px;
@@ -567,6 +584,7 @@
       <span class="app-title">MedIC Drone Operations — Base Station</span>
     </div>
     <div class="status-bar">
+      <a class="demo-link" href="./demo/">View Demo Video</a>
       <span class="status-pill active">NET LINK ACTIVE</span>
       <span class="status-pill warn">1 URGENT REQUEST</span>
       <span class="clock" id="clock">--:--:-- Z</span>
@@ -589,9 +607,9 @@
             <span class="req-id">REQ-2847</span>
             <span class="priority-dot p-critical"></span>
           </div>
-          <div class="req-medic">DEMO-7 · Mission REC-01</div>
+          <div class="req-medic">SGT M. Torres — 2/7 INF</div>
           <div class="req-meta">Grid 37SNU 44210 88430</div>
-          <div class="req-scenario">TBI – Blunt, GCS 12</div>
+          <div class="req-scenario">TBI – Blunt, GCS 8</div>
           <div class="req-time">Rcvd 14:22:08Z · 4 min ago</div>
         </div>
 
